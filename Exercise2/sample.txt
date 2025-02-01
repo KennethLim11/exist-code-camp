@@ -1,0 +1,18 @@
+
+Exercise
+Objective: Apply practical knowledge on Java 8 Lambda Expressions and Streams 
+Description: Create a horse racing program using parallel streaming.
+Conditions and Functionalities:
+- Distance between Start and Finish Line: user input
+- Number of Horses: user input
+- Horse Object should have the following properties:
+	• String name - initial value set is in lowercase (Ex: horse1, horse2)
+	• boolean healthy - random boolean
+	• Integer distanceTraveled - total distance traveled after the race
+	• String warCry - randomly select from a final static List<String> of warCries. List of warCries should contain at least 1 null element.
+- Filter only healthy horses. If the number of healthy horses is less than 2, Repeat the input for horses. Only healthy horses are allowed to race.
+- From the list of healthy horses, each horse name should be converted to uppercase before starting the race.
+- Horse speed is generated randomly for each turn, ranging from 1-10.
+- Output display in console. Display distance traveled and distance left per horse per turn.
+- When a horse arrives at the Finish Line, print a message with the horse name and it's warcry (null checking should be handled using java.util.Optional). If the warCry is empty, print "No war cry". 
+- At the end of the program print the aggregated value of the distanceTraveled property of all healthy horses.
